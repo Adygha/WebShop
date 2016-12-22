@@ -1,5 +1,7 @@
 # Test Strategy
+
 ### 1 Introduction
+
 ##### 1.1 Definitions and Acronyms
 * __Assignment-2__: Is the testing project name that this, and any following, document is going to cover.
 * __SDC__: Stand for 'Software Development Company,' which is the software company that requested the testing.
@@ -10,38 +12,52 @@
 * __Stakeholders__: All the parties interested in the test results of the Assignment-2 project. In our case we will assume Assignment-2 as a real life project (and not as an assignment); thus, the stakehoders in our case will be SDC (future IOT-developers and end-customers are not of our concern now.)
 * __Requirements__: The requirements document provided by SDC that SUT will be checked against.
 * __Phase-#__: To organize the work on Assignment-2, the working hours on Assignment-2 are divided into 5 phases with 8 hours for every phase (Phase-1, Phase-2, etc...)
+
 ##### 1.2 Overview And Purpose
 This document represents the broad strokes of the manual testing approach that is going to be excuted in relation to 'Assignment-2' of the '2DV610 Software Testing' course to evaluate the current state of SUT and whether it fulfills the requirements provided by SDC (the requirements will be presented in the test-plan document in detail). This test strategy is done by the 'Test-Lord', and will also be the starting point in developing the test plan, which is done by 'Test-Lord' too. Although it is not likely; this document, or part of it, is maybe subject to a slight change as the project progresses.
+
 ##### 1.3 Testing Objectives
 Assignment-2 objectives are summarized in the following points:
 * Evaluate the current state of SUT.
 * Check if SUT fulfills UC1, UC2, and UC3 use cases mentioned in the Requirements document.
 * Check if SUT fulfills the supplementary specification requirements mentioned in the Requirements document.
+
 ##### 1.4 Scope
 Due to resource limitations (resources covered in a later chapter,) some parts will be out of the scope of this test.
+
 ###### 1.4.1 In The Scope Of This Test
 Assignment-2 will only cover testing the use cases provided in the Requirements and its supplementary specification section.
+
 ###### 1.4.1 Out Of The Scope Of This Test
 This test will not cover the requirements outside the Requirements document provided by SDC (e.g. 'minimal configuration as well as easy integration' that maybe requested by future expected IoT-developers). Testing will not check if SUT works on Mac operating system due to the lack of hardware resources. Additionally, checking if SUT works on Linux will only be covered if the time, as a resource, permits (which can be decided in the test plan.) Since SUT is provided as a working system, static qualities testing will not be covered in Assignment-2, and only dynamic qualities testing will be covered.
+
 ### 2 Resources
 This chapter will discuss the resources for Assignment-2.
+
 ##### 2.1 People And Their Time
 Assignment-2 will have only one person (Test-Lord) to handle all the activities related to Assignment-2. The time assigned according to this personnel limitation is one man-week (40 hours.)
+
 ##### 2.2 Hardware And Software
 For running the test there is one laptop available. This laptop has Windows 10 and Linux Mint 18 operating systems installed, but due to time limitation it is suggested that all the testing take place in the Windows environment first and then on the Linux environment if the time permits (the test plan will decide.) If the time in the test plan permits, we can use 'JMeter server performance testing tool' against SUT. 'Firefox' web browser will be used as a main client for testing SUT on the same machine that runs SUT. Additionally, windows 'telnet' client command will be used to send some specific HTTP1.1 requests (telnet also suns on the same machine that runs SUT).
+
 ### 3 Testing Approach And Organization
 To cover the test type, the testing for this project will use the manual *system* testing to achieve testing objectives. The testing process will be divided into test cases that will be linked back to every scenario in the use cases and/or to a non-functional requitement in the Requirements document (the linking will be achieved by using a table.) The following sub-chapters will cover the other approach aspects.
+
 ##### 3.1 Test Cases' Priority And Severity (Classification)
 In this sub-section we will classify the test cases' priority and severity of a test case so that we can prioritize the testing process, and give an estimate in final report of how severe a failed test will impact the final decision of adopting the SUT (So, in our case, the severity will decide and have the same classification as priority.) The classification will be:
 * Low: To specify that a test case has a low priority for testing in a testing phase and can be postponed for a while if the time dos not permit. Additionally, 'low' means that a test case has a low impact on failing of a scenario and/or a non-functional requirement.
 * High: To specify that a test case has a high priority for testing in a testing phase, and that a test case has a high impact on failing of a scenario and/or a non-functional requirement.
 * Critical: If test case is marked as critical, all the scenarios and/or the non-functional requirements that can be traced back to it will be considered as totally 'Not-Achieved' (this classification can mark a whole use case as 'Not-Achieved' if it affects a main scenario of a use case). This classification is added in the final stages of the strategy document to be used just in case there is a test case that needs it (and it might not be used.)
+
 ##### 3.2 Pass/Fail Criteria
 Test cases will be created based on scenarios of use cases and/or non-functional requirements that we can find in the Requirements document provided by the stakeholders which in our case is SDC (please check 'stakeholders' in '1.1 Definitions and Acronyms' sub-section). Those test cases will have steps that can be followed to conduct the particular test case. In addition to steps, every test case has expected results and and actual results, and if they do not match, the status for the test case will be marked as a 'Defect' first until the the phase ends where we check if the test case needs to be altered or the test case should be marked with 'Fail' as a status. A test case can have 'Partially-Success' status if it depends on another 'Low' priority/severity test case. A failed test case can mark every scenario and/or non-functional requirement that can be traced back to it as 'Not-Achieved' (or maybe 'Partially-Achieved' depending on its severity (please check previous sub-chapter.)
+
 ##### 3.3 Testing Phases And Milestones
 In this document it is suggested that the testing process be divided to phases with 8 hours for every phase. Since the time resource is 40 hours worth of work, and reading about and preparing this test strategy document seem to take roughly 8 hours, we will consider working on this test strategy as Phese-1. The other phases will be decided in the test plan document, but as a preliminary assesment, Phase-2 will be for working on the test plan. Every phase will be concluded with an accomplishment which is the milestone for that phase. So, for Phase-1 the milestone is the completion of this test strategy document, and Phase-2 will have the completion of the test plan as its milestone (other milestones will be decided in the test plan document).
+
 ##### 3.4 Roles And Responsibilities
 Test-Lord will be responsible, in addition to creating this test strategy, of creating the test plan, preparing the test cases, conducting the actual test according to test cases, and writing a test report.
+
 ##### 3.5 Risk Management
 The main risk management strategy considered in Assignment-2 is by providing a backup of the physical resources (in our case it is just the laptop where a plan to borrow one from a friend is prepared). Additionally, a simple, but efficient file backup plan was also prepared using an online storage space. As for the time consuming risks, a solve-on-the-spot approach is considered (since it is a one-man-team.)
 
