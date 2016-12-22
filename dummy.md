@@ -75,7 +75,7 @@ In this test cases document, all the test cases are designed in Phase-3 and exec
 
 ### Test Case TC-1 : Existence Of Logging System
 |Test ID|TC-1|
-|-|-|
+|---|---|
 |Test Name|Existence Of Logging System|
 |Test Description|A stand-alone test case to make sure that SUT has a logging system that create an access log as a text file that is viewable using a text editor (This test case is solely created to test SUP-5.)|
 |Test Data|Standard-Parameters. Web-Address = '`http://localhos:8099`'|
@@ -92,7 +92,7 @@ In this test cases document, all the test cases are designed in Phase-3 and exec
 
 ### Test Case TC-2 : Access Log Written (Not Stand-Alone)
 |Test ID|TC-2|
-|-|-|
+|---|---|
 |Test Name|Access Log Written (Not Stand-Alone)|
 |Test Description|A __non__-stand-alone test case (that is part of other test cases as an expected/actual result) to make sure that SUT has written a note in the access log or not. This test case was created based on the assumption that if no logging system exists, this logging property can be added easily or the need for it can be ignored, and it is better not to mark all the riquirements that depend on it as 'Not-Achieved' if other, more important, aspects are achieved.|
 |Test Data|A __note__ from the main test case that is to be written in the access log.|
@@ -121,7 +121,7 @@ In this test cases document, all the test cases are designed in Phase-3 and exec
 
 ### Test Case TC-4 : Start SUT With Unused Port And Full Access To Shared Resources As Parameters
 |Test ID|TC-4|
-|-|-|
+|---|---|
 |Test Name|Start SUT With Unused Port And Full Access To Chared Resources As Parameters|
 |Test Description|Makes sure that SUT starts normally with normal starting conditions. This test case was re-written because the first version of it was marked with 'Defect' status (please check '3.2 Pass/Fail Criteria' in the test strategy document) because SUT asks for socket port number and shared resource container as parameters in an error message and then exits.|
 |Test Data|Standard-Parameters|
@@ -141,7 +141,7 @@ In this test cases document, all the test cases are designed in Phase-3 and exec
 
 ### Test Case TC-5 : Start SUT With Used Port And Full Access To Shared Resources As Parameters
 |Test ID|TC-5|
-|-|-|
+|---|---|
 |Test Name|Start SUT With Used Port And Full Access To Shared Resources As Parameters|
 |Test Description|Makes sure that SUT presents a message on the console stating that the provided port is previously taken. Please note that in the Requirements, the word 'socket' is used, and this test case assumes that the word 'socket' means 'port' here. Additionally, since the the port is provided as a paramere to the command line, this test case assumes that if SUT presents a message that the port is taken without specifically stating the port number, then it is considered as a 'success' if SUT presents the message immediatly after running SUT (and not wait until an HTTP request is invoked by a web browser or any other kind of client.)|
 |Test Data|Standard-Parameters|
