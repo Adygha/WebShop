@@ -18,7 +18,7 @@ Assignment-2 objectives are summarized in the following points:
 * Check if SUT fulfills UC1, UC2, and UC3 use cases mentioned in the Requirements document.
 * Check if SUT fulfills the supplementary specification requirements mentioned in the Requirements document.
 ##### 1.4 Scope
-Due to resource limitations (resources covered in a later chapter,) some parts will be out of the scope of this test.
+Due to resource limitations (resources covered in a later chapter,) some parts will be out of the scope of this test..
 ###### 1.4.1 In The Scope Of This Test
 Assignment-2 will only cover testing the use cases provided in the Requirements and its supplementary specification section.
 ###### 1.4.1 Out Of The Scope Of This Test
