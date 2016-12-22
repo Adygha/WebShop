@@ -107,7 +107,7 @@ In this test cases document, all the test cases are designed in Phase-3 and exec
 
 ### Test Case TC-3 : Start SUT With No Parameters
 |Test ID|TC-3|
-|-|-|
+|---|---|
 |Test Name|Start SUT With No Parameters|
 |Test Description|Makes sure that SUT asks for a port number and shared resources container if it was run without providing them.|
 |Test Data|N/A|
